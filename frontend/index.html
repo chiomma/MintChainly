@@ -7,21 +7,51 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>MintChainly</h1>
-      <p>Mint your unique NFT by paying a small fee.</p>
-
-      <form id="mint-form">
-        <input
-          type="text"
-          id="tokenURI"
-          placeholder="Enter metadata URI"
-          required
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="/NFT Creator _ NFT Art Maker.jpeg.svg"
+          alt="MintChainly Logo"
+          class="logo"
         />
-        <button type="submit">Mint NFT</button>
-      </form>
+        <h1 class="project-name">MintChainly</h1>
+      </div>
+    </header>
 
-      <div id="status"></div>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li class="active">Main Asset</li>
+          <li>Reveal Image</li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <div class="tabs">
+          <button class="tab active">Overview</button>
+          <button class="tab">Metadata</button>
+        </div>
+
+        <div class="card">
+          <h2>Add Metadata</h2>
+          <p>
+            Let’s link your art to the metadata files that define your NFTs.
+          </p>
+
+          <form>
+            <label for="api-key">Set NFT.Storage API Key *</label>
+            <input type="text" id="api-key" placeholder="Enter your API key" />
+            <button class="btn">Save API Key</button>
+          </form>
+
+          <p class="note">
+            This allows us to transform and upload your JSON files to
+            NFT.Storage.
+          </p>
+        </div>
+      </main>
     </div>
 
     <script src="./app.js"></script>
