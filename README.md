@@ -21,7 +21,7 @@
 
 - Install Node.js and Hardhat.
 
-2. Deploy the Contract:
+2. <strong>Deploy the Contract:</strong>
 
    `   npx hardhat run scripts/deploy.js --network <your-network>`
 
