@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1e3c72,
+    #2a5298
+  ); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff; /* White background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #333; /* Text color for the container */
+  text-align: center;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2rem;
+  color: #2a5298;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  width: calc(100% - 22px);
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Status Message */
+#status {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745; /* Green for success */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    width: 100%; /* Make the button full width on smaller screens */
+  }
+
+  #status {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

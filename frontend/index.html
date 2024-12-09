@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MintChainly</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>MintChainly</h1>
+      <p>Mint your unique NFT by paying a small fee.</p>
+
+      <form id="mint-form">
+        <input
+          type="text"
+          id="tokenURI"
+          placeholder="Enter metadata URI"
+          required
+        />
+        <button type="submit">Mint NFT</button>
+      </form>
+
+      <div id="status"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
