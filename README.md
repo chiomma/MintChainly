@@ -1,6 +1,6 @@
 # MintChainly
 
-<a url="https://mintchainly.netlify.app/">MintChainly</a> is a simple user-friendly NFT minting platform where users can create unique digital assets on the blockchain. It allows minting NFTs with metadata, ensures scarcity through a max supply, and supports viewing and transferring NFTs.
+<a href="https://mintchainly.netlify.app/">MintChainly</a> is a simple user-friendly NFT minting platform where users can create unique digital assets on the blockchain. It allows minting NFTs with metadata, ensures scarcity through a max supply, and supports viewing and transferring NFTs.
 
 ## Features
 
