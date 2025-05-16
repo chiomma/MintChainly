@@ -138,3 +138,9 @@ body {
   font-size: 0.9em;
   color: #c4c4dc;
 }
+
+#status {
+  margin-top: 10px;
+  color: #6a5acd;
+  font-weight: bold;
+}
