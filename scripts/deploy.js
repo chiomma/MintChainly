@@ -1,3 +1,6 @@
+require("@nomiclabs/hardhat-ethers");
+require("dotenv").config(); // Loads environment variables from .env
+
 const { ethers } = require("hardhat");
 
 async function main() {
@@ -17,3 +20,14 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+module.exports = {
+  solidity: "0.8.20", // Match your contract's Solidity version
+  networks: {
+    base: {
+      url: "https://mainnet.base.org", // Base Mainnet RPC URL
+      chainId: 8453,
+      accounts: [process.env.PRIVATE_KEY], // Use .env to keep private key secure
+    },
+  },
+};
